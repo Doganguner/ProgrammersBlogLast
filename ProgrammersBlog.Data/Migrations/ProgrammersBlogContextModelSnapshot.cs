@@ -17,7 +17,7 @@ namespace ProgrammersBlog.Data.Migrations
             modelBuilder
                 .UseIdentityColumns()
                 .HasAnnotation("Relational:MaxIdentifierLength", 128)
-                .HasAnnotation("ProductVersion", "5.0.0-preview.7.20365.15");
+                .HasAnnotation("ProductVersion", "5.0.0");
 
             modelBuilder.Entity("ProgrammersBlog.Entities.Concrete.Article", b =>
                 {
@@ -103,74 +103,6 @@ namespace ProgrammersBlog.Data.Migrations
                     b.HasIndex("UserId");
 
                     b.ToTable("Articles");
-
-                    b.HasData(
-                        new
-                        {
-                            Id = 1,
-                            CategoryId = 1,
-                            CommentCount = 1,
-                            Content = "Lorem Ipsum, dizgi ve baskı endüstrisinde kullanılan mıgır metinlerdir. Lorem Ipsum, adı bilinmeyen bir matbaacının bir hurufat numune kitabı oluşturmak üzere bir yazı galerisini alarak karıştırdığı 1500'lerden beri endüstri standardı sahte metinler olarak kullanılmıştır. Beşyüz yıl boyunca varlığını sürdürmekle kalmamış, aynı zamanda pek değişmeden elektronik dizgiye de sıçramıştır. 1960'larda Lorem Ipsum pasajları da içeren Letraset yapraklarının yayınlanması ile ve yakın zamanda Aldus PageMaker gibi Lorem Ipsum sürümleri içeren masaüstü yayıncılık yazılımları ile popüler olmuştur.",
-                            CreatedByName = "InitialCreate",
-                            CreatedDate = new DateTime(2020, 11, 9, 21, 10, 39, 141, DateTimeKind.Local).AddTicks(891),
-                            Date = new DateTime(2020, 11, 9, 21, 10, 39, 140, DateTimeKind.Local).AddTicks(9065),
-                            IsActive = true,
-                            IsDeleted = false,
-                            ModifiedByName = "InitialCreate",
-                            ModifiedDate = new DateTime(2020, 11, 9, 21, 10, 39, 141, DateTimeKind.Local).AddTicks(1783),
-                            Note = "C# 9.0 ve .NET 5 Yenilikleri",
-                            SeoAuthor = "Alper Tunga",
-                            SeoDescription = "C# 9.0 ve .NET 5 Yenilikleri",
-                            SeoTags = "C#, C# 9, .NET5, .NET Framework, .NET Core",
-                            Thumbnail = "Default.jpg",
-                            Title = "C# 9.0 ve .NET 5 Yenilikleri",
-                            UserId = 1,
-                            ViewCount = 100
-                        },
-                        new
-                        {
-                            Id = 2,
-                            CategoryId = 2,
-                            CommentCount = 1,
-                            Content = "Yinelenen bir sayfa içeriğinin okuyucunun dikkatini dağıttığı bilinen bir gerçektir. Lorem Ipsum kullanmanın amacı, sürekli 'buraya metin gelecek, buraya metin gelecek' yazmaya kıyasla daha dengeli bir harf dağılımı sağlayarak okunurluğu artırmasıdır. Şu anda birçok masaüstü yayıncılık paketi ve web sayfa düzenleyicisi, varsayılan mıgır metinler olarak Lorem Ipsum kullanmaktadır. Ayrıca arama motorlarında 'lorem ipsum' anahtar sözcükleri ile arama yapıldığında henüz tasarım aşamasında olan çok sayıda site listelenir. Yıllar içinde, bazen kazara, bazen bilinçli olarak (örneğin mizah katılarak), çeşitli sürümleri geliştirilmiştir.",
-                            CreatedByName = "InitialCreate",
-                            CreatedDate = new DateTime(2020, 11, 9, 21, 10, 39, 141, DateTimeKind.Local).AddTicks(3892),
-                            Date = new DateTime(2020, 11, 9, 21, 10, 39, 141, DateTimeKind.Local).AddTicks(3890),
-                            IsActive = true,
-                            IsDeleted = false,
-                            ModifiedByName = "InitialCreate",
-                            ModifiedDate = new DateTime(2020, 11, 9, 21, 10, 39, 141, DateTimeKind.Local).AddTicks(3894),
-                            Note = "C++ 11 ve 19 Yenilikleri",
-                            SeoAuthor = "Alper Tunga",
-                            SeoDescription = "C++ 11 ve 19 Yenilikleri",
-                            SeoTags = "C++ 11 ve 19 Yenilikleri",
-                            Thumbnail = "Default.jpg",
-                            Title = "C++ 11 ve 19 Yenilikleri",
-                            UserId = 1,
-                            ViewCount = 295
-                        },
-                        new
-                        {
-                            Id = 3,
-                            CategoryId = 3,
-                            CommentCount = 1,
-                            Content = "Yaygın inancın tersine, Lorem Ipsum rastgele sözcüklerden oluşmaz. Kökleri M.Ö. 45 tarihinden bu yana klasik Latin edebiyatına kadar uzanan 2000 yıllık bir geçmişi vardır. Virginia'daki Hampden-Sydney College'dan Latince profesörü Richard McClintock, bir Lorem Ipsum pasajında geçen ve anlaşılması en güç sözcüklerden biri olan 'consectetur' sözcüğünün klasik edebiyattaki örneklerini incelediğinde kesin bir kaynağa ulaşmıştır. Lorm Ipsum, Çiçero tarafından M.Ö. 45 tarihinde kaleme alınan \"de Finibus Bonorum et Malorum\" (İyi ve Kötünün Uç Sınırları) eserinin 1.10.32 ve 1.10.33 sayılı bölümlerinden gelmektedir. Bu kitap, ahlak kuramı üzerine bir tezdir ve Rönesans döneminde çok popüler olmuştur. Lorem Ipsum pasajının ilk satırı olan \"Lorem ipsum dolor sit amet\" 1.10.32 sayılı bölümdeki bir satırdan gelmektedir. 1500'lerden beri kullanılmakta olan standard Lorem Ipsum metinleri ilgilenenler için yeniden üretilmiştir. Çiçero tarafından yazılan 1.10.32 ve 1.10.33 bölümleri de 1914 H. Rackham çevirisinden alınan İngilizce sürümleri eşliğinde özgün biçiminden yeniden üretilmiştir.",
-                            CreatedByName = "InitialCreate",
-                            CreatedDate = new DateTime(2020, 11, 9, 21, 10, 39, 141, DateTimeKind.Local).AddTicks(3900),
-                            Date = new DateTime(2020, 11, 9, 21, 10, 39, 141, DateTimeKind.Local).AddTicks(3898),
-                            IsActive = true,
-                            IsDeleted = false,
-                            ModifiedByName = "InitialCreate",
-                            ModifiedDate = new DateTime(2020, 11, 9, 21, 10, 39, 141, DateTimeKind.Local).AddTicks(3901),
-                            Note = "JavaScript ES2019 ve ES2020 Yenilikleri",
-                            SeoAuthor = "Alper Tunga",
-                            SeoDescription = "JavaScript ES2019 ve ES2020 Yenilikleri",
-                            SeoTags = "JavaScript ES2019 ve ES2020 Yenilikleri",
-                            Thumbnail = "Default.jpg",
-                            Title = "JavaScript ES2019 ve ES2020 Yenilikleri",
-                            UserId = 1,
-                            ViewCount = 12
-                        });
                 });
 
             modelBuilder.Entity("ProgrammersBlog.Entities.Concrete.Category", b =>
@@ -224,12 +156,12 @@ namespace ProgrammersBlog.Data.Migrations
                         {
                             Id = 1,
                             CreatedByName = "InitialCreate",
-                            CreatedDate = new DateTime(2020, 11, 9, 21, 10, 39, 144, DateTimeKind.Local).AddTicks(3284),
+                            CreatedDate = new DateTime(2020, 11, 28, 13, 12, 12, 699, DateTimeKind.Local).AddTicks(5931),
                             Description = "C# Programlama Dili ile İlgili En Güncel Bilgiler",
                             IsActive = true,
                             IsDeleted = false,
                             ModifiedByName = "InitialCreate",
-                            ModifiedDate = new DateTime(2020, 11, 9, 21, 10, 39, 144, DateTimeKind.Local).AddTicks(3299),
+                            ModifiedDate = new DateTime(2020, 11, 28, 13, 12, 12, 699, DateTimeKind.Local).AddTicks(6691),
                             Name = "C#",
                             Note = "C# Blog Kategorisi"
                         },
@@ -237,12 +169,12 @@ namespace ProgrammersBlog.Data.Migrations
                         {
                             Id = 2,
                             CreatedByName = "InitialCreate",
-                            CreatedDate = new DateTime(2020, 11, 9, 21, 10, 39, 144, DateTimeKind.Local).AddTicks(3312),
+                            CreatedDate = new DateTime(2020, 11, 28, 13, 12, 12, 699, DateTimeKind.Local).AddTicks(7425),
                             Description = "C++ Programlama Dili ile İlgili En Güncel Bilgiler",
                             IsActive = true,
                             IsDeleted = false,
                             ModifiedByName = "InitialCreate",
-                            ModifiedDate = new DateTime(2020, 11, 9, 21, 10, 39, 144, DateTimeKind.Local).AddTicks(3314),
+                            ModifiedDate = new DateTime(2020, 11, 28, 13, 12, 12, 699, DateTimeKind.Local).AddTicks(7427),
                             Name = "C++",
                             Note = "C++ Blog Kategorisi"
                         },
@@ -250,12 +182,12 @@ namespace ProgrammersBlog.Data.Migrations
                         {
                             Id = 3,
                             CreatedByName = "InitialCreate",
-                            CreatedDate = new DateTime(2020, 11, 9, 21, 10, 39, 144, DateTimeKind.Local).AddTicks(3318),
+                            CreatedDate = new DateTime(2020, 11, 28, 13, 12, 12, 699, DateTimeKind.Local).AddTicks(7431),
                             Description = "JavaScript Programlama Dili ile İlgili En Güncel Bilgiler",
                             IsActive = true,
                             IsDeleted = false,
                             ModifiedByName = "InitialCreate",
-                            ModifiedDate = new DateTime(2020, 11, 9, 21, 10, 39, 144, DateTimeKind.Local).AddTicks(3319),
+                            ModifiedDate = new DateTime(2020, 11, 28, 13, 12, 12, 699, DateTimeKind.Local).AddTicks(7432),
                             Name = "JavaScript",
                             Note = "JavaScript Blog Kategorisi"
                         });
@@ -307,47 +239,6 @@ namespace ProgrammersBlog.Data.Migrations
                     b.HasIndex("ArticleId");
 
                     b.ToTable("Comments");
-
-                    b.HasData(
-                        new
-                        {
-                            Id = 1,
-                            ArticleId = 1,
-                            CreatedByName = "InitialCreate",
-                            CreatedDate = new DateTime(2020, 11, 9, 21, 10, 39, 146, DateTimeKind.Local).AddTicks(3700),
-                            IsActive = true,
-                            IsDeleted = false,
-                            ModifiedByName = "InitialCreate",
-                            ModifiedDate = new DateTime(2020, 11, 9, 21, 10, 39, 146, DateTimeKind.Local).AddTicks(3713),
-                            Note = "C# Makale Yorumu",
-                            Text = "Lorem Ipsum pasajlarının birçok çeşitlemesi vardır. Ancak bunların büyük bir çoğunluğu mizah katılarak veya rastgele sözcükler eklenerek değiştirilmişlerdir. Eğer bir Lorem Ipsum pasajı kullanacaksanız, metin aralarına utandırıcı sözcükler gizlenmediğinden emin olmanız gerekir. İnternet'teki tüm Lorem Ipsum üreteçleri önceden belirlenmiş metin bloklarını yineler. Bu da, bu üreteci İnternet üzerindeki gerçek Lorem Ipsum üreteci yapar. Bu üreteç, 200'den fazla Latince sözcük ve onlara ait cümle yapılarını içeren bir sözlük kullanır. Bu nedenle, üretilen Lorem Ipsum metinleri yinelemelerden, mizahtan ve karakteristik olmayan sözcüklerden uzaktır."
-                        },
-                        new
-                        {
-                            Id = 2,
-                            ArticleId = 2,
-                            CreatedByName = "InitialCreate",
-                            CreatedDate = new DateTime(2020, 11, 9, 21, 10, 39, 146, DateTimeKind.Local).AddTicks(3726),
-                            IsActive = true,
-                            IsDeleted = false,
-                            ModifiedByName = "InitialCreate",
-                            ModifiedDate = new DateTime(2020, 11, 9, 21, 10, 39, 146, DateTimeKind.Local).AddTicks(3728),
-                            Note = "C++ Makale Yorumu",
-                            Text = "Lorem Ipsum pasajlarının birçok çeşitlemesi vardır. Ancak bunların büyük bir çoğunluğu mizah katılarak veya rastgele sözcükler eklenerek değiştirilmişlerdir. Eğer bir Lorem Ipsum pasajı kullanacaksanız, metin aralarına utandırıcı sözcükler gizlenmediğinden emin olmanız gerekir. İnternet'teki tüm Lorem Ipsum üreteçleri önceden belirlenmiş metin bloklarını yineler. Bu da, bu üreteci İnternet üzerindeki gerçek Lorem Ipsum üreteci yapar. Bu üreteç, 200'den fazla Latince sözcük ve onlara ait cümle yapılarını içeren bir sözlük kullanır. Bu nedenle, üretilen Lorem Ipsum metinleri yinelemelerden, mizahtan ve karakteristik olmayan sözcüklerden uzaktır."
-                        },
-                        new
-                        {
-                            Id = 3,
-                            ArticleId = 3,
-                            CreatedByName = "InitialCreate",
-                            CreatedDate = new DateTime(2020, 11, 9, 21, 10, 39, 146, DateTimeKind.Local).AddTicks(3732),
-                            IsActive = true,
-                            IsDeleted = false,
-                            ModifiedByName = "InitialCreate",
-                            ModifiedDate = new DateTime(2020, 11, 9, 21, 10, 39, 146, DateTimeKind.Local).AddTicks(3733),
-                            Note = "JavaScript Makale Yorumu",
-                            Text = "Lorem Ipsum pasajlarının birçok çeşitlemesi vardır. Ancak bunların büyük bir çoğunluğu mizah katılarak veya rastgele sözcükler eklenerek değiştirilmişlerdir. Eğer bir Lorem Ipsum pasajı kullanacaksanız, metin aralarına utandırıcı sözcükler gizlenmediğinden emin olmanız gerekir. İnternet'teki tüm Lorem Ipsum üreteçleri önceden belirlenmiş metin bloklarını yineler. Bu da, bu üreteci İnternet üzerindeki gerçek Lorem Ipsum üreteci yapar. Bu üreteç, 200'den fazla Latince sözcük ve onlara ait cümle yapılarını içeren bir sözlük kullanır. Bu nedenle, üretilen Lorem Ipsum metinleri yinelemelerden, mizahtan ve karakteristik olmayan sözcüklerden uzaktır."
-                        });
                 });
 
             modelBuilder.Entity("ProgrammersBlog.Entities.Concrete.Role", b =>
@@ -357,60 +248,65 @@ namespace ProgrammersBlog.Data.Migrations
                         .HasColumnType("int")
                         .UseIdentityColumn();
 
-                    b.Property<string>("CreatedByName")
-                        .IsRequired()
-                        .HasMaxLength(50)
-                        .HasColumnType("nvarchar(50)");
-
-                    b.Property<DateTime>("CreatedDate")
-                        .HasColumnType("datetime2");
-
-                    b.Property<string>("Description")
-                        .IsRequired()
-                        .HasMaxLength(250)
-                        .HasColumnType("nvarchar(250)");
-
-                    b.Property<bool>("IsActive")
-                        .HasColumnType("bit");
-
-                    b.Property<bool>("IsDeleted")
-                        .HasColumnType("bit");
-
-                    b.Property<string>("ModifiedByName")
-                        .IsRequired()
-                        .HasMaxLength(50)
-                        .HasColumnType("nvarchar(50)");
-
-                    b.Property<DateTime>("ModifiedDate")
-                        .HasColumnType("datetime2");
+                    b.Property<string>("ConcurrencyStamp")
+                        .IsConcurrencyToken()
+                        .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("Name")
-                        .IsRequired()
-                        .HasMaxLength(30)
-                        .HasColumnType("nvarchar(30)");
+                        .HasMaxLength(100)
+                        .HasColumnType("nvarchar(100)");
 
-                    b.Property<string>("Note")
-                        .HasMaxLength(500)
-                        .HasColumnType("nvarchar(500)");
+                    b.Property<string>("NormalizedName")
+                        .HasMaxLength(100)
+                        .HasColumnType("nvarchar(100)");
 
                     b.HasKey("Id");
 
-                    b.ToTable("Roles");
+                    b.HasIndex("NormalizedName")
+                        .IsUnique()
+                        .HasDatabaseName("RoleNameIndex")
+                        .HasFilter("[NormalizedName] IS NOT NULL");
+
+                    b.ToTable("AspNetRoles");
 
                     b.HasData(
                         new
                         {
                             Id = 1,
-                            CreatedByName = "InitialCreate",
-                            CreatedDate = new DateTime(2020, 11, 9, 21, 10, 39, 148, DateTimeKind.Local).AddTicks(373),
-                            Description = "Admin Rolü, Tüm Haklara Sahiptir.",
-                            IsActive = true,
-                            IsDeleted = false,
-                            ModifiedByName = "InitialCreate",
-                            ModifiedDate = new DateTime(2020, 11, 9, 21, 10, 39, 148, DateTimeKind.Local).AddTicks(386),
+                            ConcurrencyStamp = "25c9edb1-d45b-41e5-892b-20a354aa900d",
                             Name = "Admin",
-                            Note = "Admin Rolüdür."
+                            NormalizedName = "ADMIN"
+                        },
+                        new
+                        {
+                            Id = 2,
+                            ConcurrencyStamp = "d1c9694d-611b-4f89-9e37-c25314c6b223",
+                            Name = "Editor",
+                            NormalizedName = "EDITOR"
                         });
+                });
+
+            modelBuilder.Entity("ProgrammersBlog.Entities.Concrete.RoleClaim", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int")
+                        .UseIdentityColumn();
+
+                    b.Property<string>("ClaimType")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("ClaimValue")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<int>("RoleId")
+                        .HasColumnType("int");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("RoleId");
+
+                    b.ToTable("AspNetRoleClaims");
                 });
 
             modelBuilder.Entity("ProgrammersBlog.Entities.Concrete.User", b =>
@@ -420,100 +316,201 @@ namespace ProgrammersBlog.Data.Migrations
                         .HasColumnType("int")
                         .UseIdentityColumn();
 
-                    b.Property<string>("CreatedByName")
-                        .IsRequired()
-                        .HasMaxLength(50)
-                        .HasColumnType("nvarchar(50)");
+                    b.Property<int>("AccessFailedCount")
+                        .HasColumnType("int");
 
-                    b.Property<DateTime>("CreatedDate")
-                        .HasColumnType("datetime2");
-
-                    b.Property<string>("Description")
-                        .HasMaxLength(500)
-                        .HasColumnType("nvarchar(500)");
+                    b.Property<string>("ConcurrencyStamp")
+                        .IsConcurrencyToken()
+                        .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("Email")
-                        .IsRequired()
+                        .HasMaxLength(100)
+                        .HasColumnType("nvarchar(100)");
+
+                    b.Property<bool>("EmailConfirmed")
+                        .HasColumnType("bit");
+
+                    b.Property<bool>("LockoutEnabled")
+                        .HasColumnType("bit");
+
+                    b.Property<DateTimeOffset?>("LockoutEnd")
+                        .HasColumnType("datetimeoffset");
+
+                    b.Property<string>("NormalizedEmail")
+                        .HasMaxLength(100)
+                        .HasColumnType("nvarchar(100)");
+
+                    b.Property<string>("NormalizedUserName")
                         .HasMaxLength(50)
                         .HasColumnType("nvarchar(50)");
 
-                    b.Property<string>("FirstName")
-                        .IsRequired()
-                        .HasMaxLength(30)
-                        .HasColumnType("nvarchar(30)");
+                    b.Property<string>("PasswordHash")
+                        .HasColumnType("nvarchar(max)");
 
-                    b.Property<bool>("IsActive")
+                    b.Property<string>("PhoneNumber")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<bool>("PhoneNumberConfirmed")
                         .HasColumnType("bit");
-
-                    b.Property<bool>("IsDeleted")
-                        .HasColumnType("bit");
-
-                    b.Property<string>("LastName")
-                        .IsRequired()
-                        .HasMaxLength(30)
-                        .HasColumnType("nvarchar(30)");
-
-                    b.Property<string>("ModifiedByName")
-                        .IsRequired()
-                        .HasMaxLength(50)
-                        .HasColumnType("nvarchar(50)");
-
-                    b.Property<DateTime>("ModifiedDate")
-                        .HasColumnType("datetime2");
-
-                    b.Property<string>("Note")
-                        .HasMaxLength(500)
-                        .HasColumnType("nvarchar(500)");
-
-                    b.Property<byte[]>("PasswordHash")
-                        .IsRequired()
-                        .HasColumnType("VARBINARY(500)");
 
                     b.Property<string>("Picture")
                         .IsRequired()
                         .HasMaxLength(250)
                         .HasColumnType("nvarchar(250)");
 
-                    b.Property<int>("RoleId")
-                        .HasColumnType("int");
+                    b.Property<string>("SecurityStamp")
+                        .HasColumnType("nvarchar(max)");
 
-                    b.Property<string>("Username")
-                        .IsRequired()
-                        .HasMaxLength(20)
-                        .HasColumnType("nvarchar(20)");
+                    b.Property<bool>("TwoFactorEnabled")
+                        .HasColumnType("bit");
+
+                    b.Property<string>("UserName")
+                        .HasMaxLength(50)
+                        .HasColumnType("nvarchar(50)");
 
                     b.HasKey("Id");
 
-                    b.HasIndex("Email")
-                        .IsUnique();
+                    b.HasIndex("NormalizedEmail")
+                        .HasDatabaseName("EmailIndex");
 
-                    b.HasIndex("RoleId");
+                    b.HasIndex("NormalizedUserName")
+                        .IsUnique()
+                        .HasDatabaseName("UserNameIndex")
+                        .HasFilter("[NormalizedUserName] IS NOT NULL");
 
-                    b.HasIndex("Username")
-                        .IsUnique();
-
-                    b.ToTable("Users");
+                    b.ToTable("AspNetUsers");
 
                     b.HasData(
                         new
                         {
                             Id = 1,
-                            CreatedByName = "InitialCreate",
-                            CreatedDate = new DateTime(2020, 11, 9, 21, 10, 39, 154, DateTimeKind.Local).AddTicks(7378),
-                            Description = "İlk Admin Kullanıcı",
-                            Email = "alper@altu.dev",
-                            FirstName = "Alper",
-                            IsActive = true,
-                            IsDeleted = false,
-                            LastName = "Tunga",
-                            ModifiedByName = "InitialCreate",
-                            ModifiedDate = new DateTime(2020, 11, 9, 21, 10, 39, 154, DateTimeKind.Local).AddTicks(7393),
-                            Note = "Admin Kullanıcısı",
-                            PasswordHash = new byte[] { 48, 49, 57, 50, 48, 50, 51, 97, 55, 98, 98, 100, 55, 51, 50, 53, 48, 53, 49, 54, 102, 48, 54, 57, 100, 102, 49, 56, 98, 53, 48, 48 },
-                            Picture = "https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcSX4wVGjMQ37PaO4PdUVEAliSLi8-c2gJ1zvQ&usqp=CAU",
-                            RoleId = 1,
-                            Username = "alpertunga"
+                            AccessFailedCount = 0,
+                            ConcurrencyStamp = "35fb1a6f-02c6-4388-a7e2-ecd42aae9ff6",
+                            Email = "adminuser@gmail.com",
+                            EmailConfirmed = true,
+                            LockoutEnabled = false,
+                            NormalizedEmail = "ADMINUSER@GMAIL.COM",
+                            NormalizedUserName = "ADMINUSER",
+                            PasswordHash = "AQAAAAEAACcQAAAAEKSas03z8Jy9sw8YcKapuEgxlMgH0S9kVGuKacaPF/8C4M0zyAM90HP5r5NB9O5/Ww==",
+                            PhoneNumber = "+905555555555",
+                            PhoneNumberConfirmed = true,
+                            Picture = "defaultUser.png",
+                            SecurityStamp = "3be4648e-7c27-43bb-addf-aa45f03b09b6",
+                            TwoFactorEnabled = false,
+                            UserName = "adminuser"
+                        },
+                        new
+                        {
+                            Id = 2,
+                            AccessFailedCount = 0,
+                            ConcurrencyStamp = "f99e0500-1eb7-4a6d-b90d-0cb16b0d2c5c",
+                            Email = "editoruser@gmail.com",
+                            EmailConfirmed = true,
+                            LockoutEnabled = false,
+                            NormalizedEmail = "EDITORUSER@GMAIL.COM",
+                            NormalizedUserName = "EDITORUSER",
+                            PasswordHash = "AQAAAAEAACcQAAAAEJWo980Sw2i0R7uXMDe/PvVfacweWsHSp3mdFo7CD4GMlxaURKUhINDv2EhMzqrTsw==",
+                            PhoneNumber = "+905555555555",
+                            PhoneNumberConfirmed = true,
+                            Picture = "defaultUser.png",
+                            SecurityStamp = "58e2eb41-ec66-49c5-96ac-f192dbeff03d",
+                            TwoFactorEnabled = false,
+                            UserName = "editoruser"
                         });
+                });
+
+            modelBuilder.Entity("ProgrammersBlog.Entities.Concrete.UserClaim", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int")
+                        .UseIdentityColumn();
+
+                    b.Property<string>("ClaimType")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("ClaimValue")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<int>("UserId")
+                        .HasColumnType("int");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("UserId");
+
+                    b.ToTable("AspNetUserClaims");
+                });
+
+            modelBuilder.Entity("ProgrammersBlog.Entities.Concrete.UserLogin", b =>
+                {
+                    b.Property<string>("LoginProvider")
+                        .HasMaxLength(128)
+                        .HasColumnType("nvarchar(128)");
+
+                    b.Property<string>("ProviderKey")
+                        .HasMaxLength(128)
+                        .HasColumnType("nvarchar(128)");
+
+                    b.Property<string>("ProviderDisplayName")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<int>("UserId")
+                        .HasColumnType("int");
+
+                    b.HasKey("LoginProvider", "ProviderKey");
+
+                    b.HasIndex("UserId");
+
+                    b.ToTable("AspNetUserLogins");
+                });
+
+            modelBuilder.Entity("ProgrammersBlog.Entities.Concrete.UserRole", b =>
+                {
+                    b.Property<int>("UserId")
+                        .HasColumnType("int");
+
+                    b.Property<int>("RoleId")
+                        .HasColumnType("int");
+
+                    b.HasKey("UserId", "RoleId");
+
+                    b.HasIndex("RoleId");
+
+                    b.ToTable("AspNetUserRoles");
+
+                    b.HasData(
+                        new
+                        {
+                            UserId = 1,
+                            RoleId = 1
+                        },
+                        new
+                        {
+                            UserId = 2,
+                            RoleId = 2
+                        });
+                });
+
+            modelBuilder.Entity("ProgrammersBlog.Entities.Concrete.UserToken", b =>
+                {
+                    b.Property<int>("UserId")
+                        .HasColumnType("int");
+
+                    b.Property<string>("LoginProvider")
+                        .HasMaxLength(256)
+                        .HasColumnType("nvarchar(256)");
+
+                    b.Property<string>("Name")
+                        .HasMaxLength(256)
+                        .HasColumnType("nvarchar(256)");
+
+                    b.Property<string>("Value")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("UserId", "LoginProvider", "Name");
+
+                    b.ToTable("AspNetUserTokens");
                 });
 
             modelBuilder.Entity("ProgrammersBlog.Entities.Concrete.Article", b =>
@@ -529,6 +526,10 @@ namespace ProgrammersBlog.Data.Migrations
                         .HasForeignKey("UserId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
+
+                    b.Navigation("Category");
+
+                    b.Navigation("User");
                 });
 
             modelBuilder.Entity("ProgrammersBlog.Entities.Concrete.Comment", b =>
@@ -538,15 +539,74 @@ namespace ProgrammersBlog.Data.Migrations
                         .HasForeignKey("ArticleId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
+
+                    b.Navigation("Article");
+                });
+
+            modelBuilder.Entity("ProgrammersBlog.Entities.Concrete.RoleClaim", b =>
+                {
+                    b.HasOne("ProgrammersBlog.Entities.Concrete.Role", null)
+                        .WithMany()
+                        .HasForeignKey("RoleId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+                });
+
+            modelBuilder.Entity("ProgrammersBlog.Entities.Concrete.UserClaim", b =>
+                {
+                    b.HasOne("ProgrammersBlog.Entities.Concrete.User", null)
+                        .WithMany()
+                        .HasForeignKey("UserId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+                });
+
+            modelBuilder.Entity("ProgrammersBlog.Entities.Concrete.UserLogin", b =>
+                {
+                    b.HasOne("ProgrammersBlog.Entities.Concrete.User", null)
+                        .WithMany()
+                        .HasForeignKey("UserId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+                });
+
+            modelBuilder.Entity("ProgrammersBlog.Entities.Concrete.UserRole", b =>
+                {
+                    b.HasOne("ProgrammersBlog.Entities.Concrete.Role", null)
+                        .WithMany()
+                        .HasForeignKey("RoleId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("ProgrammersBlog.Entities.Concrete.User", null)
+                        .WithMany()
+                        .HasForeignKey("UserId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+                });
+
+            modelBuilder.Entity("ProgrammersBlog.Entities.Concrete.UserToken", b =>
+                {
+                    b.HasOne("ProgrammersBlog.Entities.Concrete.User", null)
+                        .WithMany()
+                        .HasForeignKey("UserId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+                });
+
+            modelBuilder.Entity("ProgrammersBlog.Entities.Concrete.Article", b =>
+                {
+                    b.Navigation("Comments");
+                });
+
+            modelBuilder.Entity("ProgrammersBlog.Entities.Concrete.Category", b =>
+                {
+                    b.Navigation("Articles");
                 });
 
             modelBuilder.Entity("ProgrammersBlog.Entities.Concrete.User", b =>
                 {
-                    b.HasOne("ProgrammersBlog.Entities.Concrete.Role", "Role")
-                        .WithMany("Users")
-                        .HasForeignKey("RoleId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
+                    b.Navigation("Articles");
                 });
 #pragma warning restore 612, 618
         }

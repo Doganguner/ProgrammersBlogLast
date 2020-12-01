@@ -1,6 +1,7 @@
 ﻿using System.Text.Json;
 using System.Text.Json.Serialization;
 using System.Threading.Tasks;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using ProgrammersBlog.Entities.Dtos;
 using ProgrammersBlog.Mvc.Areas.Admin.Models;
@@ -11,6 +12,7 @@ using ProgrammersBlog.Shared.Utilities.Results.ComplexTypes;
 namespace ProgrammersBlog.Mvc.Areas.Admin.Controllers
 {
     [Area("Admin")]
+    [Authorize(Roles = "Admin,Editor")]
     public class CategoryController : Controller
     {
         private readonly ICategoryService _categoryService;
