@@ -25,12 +25,13 @@ namespace ProgrammersBlog.Services.Utilities
 
             public static string Delete(string categoryName)
             {
-                return $"{categoryName} adlı kategori başarıyla silinmiştir."
+                return $"{categoryName} adlı kategori başarıyla silinmiştir.";
             }
 
             public static string HardDelete(string categoryName)
             {
-                return $"{categoryName} a adlı kategori başarıyla veritabanından silinmiştir.");
+                return $"{categoryName} a adlı kategori başarıyla veritabanından silinmiştir.";
+                
             }
         }
 
@@ -54,7 +55,7 @@ namespace ProgrammersBlog.Services.Utilities
 
             public static string Delete(string categoryName)
             {
-                return $"{categoryName} adlı makale başarıyla silinmiştir."
+                return $"{categoryName} adlı makale başarıyla silinmiştir.";
             }
 
             public static string HardDelete(string categoryName)
