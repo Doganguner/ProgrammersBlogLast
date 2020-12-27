@@ -8,7 +8,9 @@
     <meta name="author" content="" />
     <title>@ViewBag.Title - Admin Paneli   Programmers Blog</title>
     @await Html.PartialAsync("_LayoutCssPartial")
-  </head>
+    @await RenderSectionAsync("Styles", false);
+    <link href="~/AdminLTE/css/site.css" rel="stylesheet" />
+</head>
 <body class="sb-nav-fixed">
     <nav class="sb-topnav navbar navbar-expand navbar-dark bg-dark">
         <a class="navbar-brand" asp-area="Admin" asp-controller="Home" asp-action="Index">Admin Paneli</a>
@@ -56,6 +58,6 @@
         </div>
     </div>
 @await Html.PartialAsync("_LayoutJsPartial")
-@await RenderSectionAsync("Scripts",false)
+@await RenderSectionAsync("Scripts",false);
 </body>
 </html>
